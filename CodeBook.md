@@ -1,5 +1,5 @@
 #Code Book
-This document describes the code inside run_analysis.R
+This document underlines the main informations to understand the input and output of the run_analysis.R script
 
 ##Overview
 Source of the original raw Data: 
