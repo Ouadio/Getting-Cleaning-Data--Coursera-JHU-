@@ -43,6 +43,8 @@ The code in run_analysis.R can be described as a 4-steps code (the script is spl
 
 4. Creating a second tidy data set with the average of each Variable for each Activity and each Subject
 
+***
+
 ##Code parts explicitly:
 ####1- Loading and preparing the required data
 *10-17:* Loading the required datasets and storing them in variables
