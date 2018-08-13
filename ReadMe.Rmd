@@ -1,5 +1,5 @@
-#Getting&CleaningData : Course Project
-##Introduction
+# Getting&CleaningData : Course Project
+## Introduction
 This repo contains my course project to "Getting & Cleaning Data" course by JHU-Coursera.
 It contains:    
 -run_analysis.R : Contains the code that performs the Data-Tidying as described in the course-Project   
@@ -8,16 +8,16 @@ It contains:
 
 ***
 
-##Files
-####run_analysis.R
+## Files
+#### run_analysis.R
 The "run_analysis.R"" script requires downloading and unziping the original raw data, which was generated during a set of experiments that study the data collected by a smartphone of subjects in specific positions and activities.  
 The code performs transformations on the raw data and returns a Tidy data as an output in .txt format.
 It can be launched using RStudio
 
-####CodeBook.Rmd
+#### CodeBook.Rmd
 Describes the operations performed by the script and the variables of the obtained data
 
-####TidyAverage.txt
+#### TidyAverage.txt
 The 2nd output of the script run_analysis.R as described in the 5th step of the project Course
 
 ***
@@ -45,11 +45,11 @@ The code in run_analysis.R can be described as a 4-steps code (the script is spl
 
 ***
 
-##Code parts explicitly:
-####1- Loading and preparing the required data
+## Code parts explicitly:
+#### 1- Loading and preparing the required data
 *10-17:* Loading the required datasets and storing them in variables
 
-####2- Extracting only the enteries storing the mean or standard deviation for each measurement
+#### 2- Extracting only the enteries storing the mean or standard deviation for each measurement
 *22:* deleting the numbers in the features vector (irrelevant for the study)
 *23-24:* selecting the indexes of the features mentionning a mean or standard deviation in the features vector
 *29:* extracting only the columns of the training dataset corresponding the the mean/standard deviation of the measurements
@@ -60,7 +60,7 @@ The code in run_analysis.R can be described as a 4-steps code (the script is spl
 
 *42-43:* by default the subjects and activity values are stored as factors. Turning them into characters.
 
-####3- Merging training and test data to create a first Tidy Dataset
+#### 3- Merging training and test data to create a first Tidy Dataset
 
 *48:* merging the train and test with **rbind()** in one dataset stored in *total*
 *52-53:* cleaning the activity labels and attributing them to activity column of *total*
